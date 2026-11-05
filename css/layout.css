@@ -1,0 +1,137 @@
+/**
+ * layout.css - 網站格線排版、容器尺寸、雙欄結構與版面佈局
+ * 專題作品：《成交 我的慢活日常》
+ */
+
+/* 主要容器 */
+.container {
+  width: 100%;
+  max-width: var(--max-width);
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 24px;
+  padding-right: 24px;
+}
+
+/* 網站整體佈局：頂部導覽列、中央內容區、底部頁腳 */
+.site-wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.site-main {
+  flex: 1 0 auto;
+  padding-top: 36px;
+  padding-bottom: 72px;
+}
+
+/* 頁面主要雙欄 Grid 結構（側邊欄 + 主內容區） */
+.content-grid {
+  display: grid;
+  grid-template-columns: 280px 1fr;
+  gap: 48px;
+  align-items: start;
+}
+
+/* 單欄專用（如首頁寬幅展覽主視覺） */
+.content-single {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 48px;
+}
+
+/* 側邊欄容器 */
+.sidebar {
+  position: sticky;
+  top: 96px;
+  background-color: var(--color-bg-card-alt);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  padding: 24px;
+  align-self: start;
+}
+
+/* 主內容區塊容器 */
+.main-content {
+  min-width: 0; /* 防止子元素溢出破壞 Grid */
+  display: flex;
+  flex-direction: column;
+  gap: 56px;
+}
+
+/* 區塊內通用卡片或段落組 */
+.section-block {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  scroll-margin-top: 100px; /* 錨點跳轉時預留導覽列安全距離 */
+}
+
+.section-divider {
+  height: 1px;
+  background-color: var(--color-border);
+  margin-top: 12px;
+  margin-bottom: 8px;
+  border: none;
+}
+
+/* 團隊成員卡片 Grid（核心要求：以 CSS Grid 排版，寬度切換） */
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+/* 幕後製作素材 Grid */
+.bts-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+/* 首頁故事與特色雙欄 Grid */
+.story-split-grid {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  gap: 40px;
+  align-items: center;
+}
+
+/* 首頁精選專區三欄 Grid */
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+/* 頁腳排版 */
+.site-footer {
+  flex-shrink: 0;
+  background-color: #231A12;
+  color: #DDD4C8;
+  border-top: 1px solid rgba(221, 212, 200, 0.1);
+  padding-top: 48px;
+  padding-bottom: 40px;
+  margin-top: auto;
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr 1fr;
+  gap: 36px;
+  align-items: start;
+}
+
+.footer-bottom {
+  margin-top: 40px;
+  padding-top: 24px;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 16px;
+  font-size: 0.88rem;
+  color: #A99B8D;
+}

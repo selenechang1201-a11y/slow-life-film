@@ -1,11 +1,111 @@
-<div align="center">
+# 《成交 我的慢活日常》- 大二影展專題官方網站
 
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
+本專案為大二影展課程之短片專題介紹網站，主題為「**台中綠洲**」，故事以**台中糖廠**為背景，透過主角放下對完美的過度要求，探討在緊湊的現代生活節奏中重拾內心平靜與笑容的慢活日常。
 
-  <h1>Built with AI Studio</h2>
+---
 
-  <p>The fastest path from prompt to production with Gemini.</p>
+## 一、作品基本資料
 
-  <a href="https://aistudio.google.com/apps">Start building</a>
+- **片名**：成交 我的慢活日常
+- **課堂主題**：台中綠洲
+- **故事場域**：台中糖廠（帝國製糖廠、星泉湖畔）
+- **片長**：待確認
+- **首頁引言**：放慢腳步，讓生活甜一點。
 
-</div>
+### 製作團隊
+- **李美茵**：組長、文案
+- **張紫珊**：導演
+- **朱家芯**：拍攝、剪接
+- **吳怡霈**：美術
+- **陳鈺誠**：劇務
+- **林羽恩**：企劃
+- **葉沛欣**：企劃
+
+---
+
+## 二、網站架構與頁面規劃
+
+本站採真正的多頁式架構（Multi-Page Application），各頁皆具備獨立 HTML 檔案、一致的頂部導覽列與側邊欄導航：
+
+| 檔案名稱 | 頁面名稱 | 內容重點 |
+| :--- | :--- | :--- |
+| `index.html` | 首頁 | 主視覺海報素材預留區、片名、首頁短句、故事摘要、各單元導覽 |
+| `about.html` | 創作介紹 | 創作動機、故事大綱、台中綠洲與主題意象之關聯、糖廠歷史場域背景 |
+| `team.html` | 製作團隊 | 七位成員與職務卡片（CSS Grid 響應式 3/2/1 欄）、組織架構與合作模式 |
+| `behind-scenes.html` | 幕後花絮 | 分鏡規劃展示區、現場拍攝紀錄、幕後側拍照素材預留區（素材陸續補上） |
+| `film.html` | 影片欣賞 | 16:9 正片播放器預留區（標示「影片即將上線」）、作品規格清單、嵌入指南 |
+
+---
+
+## 三、技術架構與特色
+
+本站完全遵循「無外部框架、零依賴、純靜態」之開發原則，能離線直接開啟與免伺服器部署：
+
+1. **純 HTML5 語意化結構**：
+   - 採用 `<header>`, `<nav>`, `<main>`, `<aside>`, `<section>`, `<article>`, `<footer>` 等標準語意標籤。
+   - 具備完整 `<h1>`–`<h3>` 標題階層，並配置 `.skip-link` 支援鍵盤跳轉無障礙標準。
+   - 全站無任何行內 `style="..."` 樣式，樣式規則全數歸納於 CSS 模組。
+
+2. **CSS 模組化與排版系統**：
+   - `css/base.css`：全域變數設定（暖米色 `#F7F4EE`、深咖啡色 `#2B2118`、灰綠色 `#5A6B5C`）、字體系統與 Reset。
+   - `css/layout.css`：整體雙欄架構（側邊欄 280px + 主內容區 1fr）與頁面網格。
+   - `css/components.css`：導覽列、側邊欄、卡片、按鈕、預留素材方塊、頁腳元件樣式。
+   - `css/responsive.css`：跨裝置 RWD 樣式，精準支援 1440px（電腦）、768px（平板）、390px 與 375px（手機）。
+
+3. **原生 JavaScript 互動功能 (`js/main.js`)**：
+   - 手機版漢堡選單開合切換，並自動同步 `aria-expanded` 狀態與鍵盤 `Escape` 鍵關閉支援。
+   - 依據目前網址自動為導覽列連結加上 `.is-active` 與 `aria-current="page"`。
+   - 錨點平滑滾動（Smooth Scroll）並自動補償頂部導覽列固定高度。
+   - 側邊欄章節目錄滾動監聽（ScrollSpy）。
+
+4. **SEO 基本優化**：
+   - 各頁設定專屬符合內容之 `<title>` 與 `<meta name="description">`。
+   - 設定繁體中文語言標籤 `lang="zh-Hant"`、UTF-8 編碼與響應式 Viewport。
+   - 設定標準 Open Graph 社群分享基本標題與描述。
+
+---
+
+## 四、部署說明
+
+本站所有路徑均採用相對路徑（Relative Path），可隨意部署於任何環境：
+
+### 1. 部署至 InfinityFree
+1. 登入 InfinityFree 控制台並開啟檔案管理器（File Manager）或使用 FTP 連線。
+2. 進入根目錄下的 `htdocs/` 資料夾。
+3. 將專案中的以下檔案直接複製貼上至 `htdocs/` 內：
+   - `index.html`（作為預設首頁）
+   - `about.html`, `team.html`, `behind-scenes.html`, `film.html`
+   - `css/` 資料夾（包含 4 個 CSS 檔案）
+   - `js/` 資料夾（包含 `main.js`）
+   - `images/` 資料夾（包含所有海報與劇照）
+4. 上傳完成後，開啟您的 InfinityFree 網址即可直接瀏覽。
+
+### 2. 部署至 Vercel
+1. 將專案 push 至個人的 GitHub 倉庫。
+2. 登入 Vercel 點選「Add New Project」並匯入該 GitHub 倉庫。
+3. Framework Preset 選擇「Other」或保持預設，Root Directory 設定為根目錄。
+4. 點選「Deploy」，數秒內即可自動發布上線。
+
+### 3. 本地端即時預覽（開發工具）
+本專案已配置 Vite 開發伺服器以利快速預覽：
+```bash
+# 安裝相依套件（僅用於本地開發伺服器）
+npm install
+
+# 啟動開發伺服器
+npm run dev
+
+# 進行靜態建置打包
+npm run build
+```
+
+---
+
+## 五、素材替換指南
+
+- **圖片檔案**：請放置於 `images/` 資料夾，並於對應 HTML 中將預留區塊替換為 `<img>` 標籤（詳細命名規範請參閱 `images/README.txt`）。
+- **影片嵌入**：待正式影片上傳至 YouTube 或影音平台後，將 `film.html` 中預留容器替換為 `<iframe>` 嵌入碼即可。
+
+---
+
+&copy; 2026 《成交 我的慢活日常》專題製作小組. 保留所有權利.

@@ -1,0 +1,282 @@
+<!doctype html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>製作團隊 - 《成交 我的慢活日常》台中綠洲影展專題</title>
+    <meta name="description" content="《成交 我的慢活日常》大二影展專題製作團隊名單。全組共 7 位成員分工合作，包含導演張紫珊、組長李美茵、攝影剪輯朱家芯等成員職務介紹。">
+    
+    <!-- Open Graph 社群標籤 -->
+    <meta property="og:title" content="製作團隊 - 《成交 我的慢活日常》">
+    <meta property="og:description" content="大二影展專題製作小組：導演張紫珊、組長兼文案李美茵、拍攝剪接朱家芯、美術吳怡霈、劇務陳鈺誠、企劃林羽恩與葉沛欣。">
+    <meta property="og:type" content="website">
+
+    <!-- CSS 樣式模組 -->
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/responsive.css">
+
+    <!-- JavaScript 腳本 -->
+    <script type="module" src="js/main.js"></script>
+  </head>
+  <body>
+    <!-- 鍵盤無障礙跳轉 -->
+    <a href="#main-content" class="skip-link">跳至主要內容區</a>
+
+    <!-- 頂部主要導覽列 -->
+    <header class="site-header">
+      <div class="container header-container">
+        <a href="index.html" class="site-brand" aria-label="成交 我的慢活日常 首頁">
+          <span class="brand-title">成交 我的慢活日常</span>
+          <span class="brand-tag">台中綠洲 影展專題</span>
+        </a>
+
+        <nav class="site-nav" aria-label="全站主導覽">
+          <a href="index.html" class="nav-link">首頁</a>
+          <a href="about.html" class="nav-link">創作介紹</a>
+          <a href="team.html" class="nav-link is-active" aria-current="page">製作團隊</a>
+          <a href="behind-scenes.html" class="nav-link">幕後花絮</a>
+          <a href="film.html" class="nav-link">影片欣賞</a>
+        </nav>
+
+        <div class="header-actions">
+          <button 
+            type="button" 
+            class="nav-toggle-btn" 
+            aria-expanded="false" 
+            aria-controls="mobile-menu"
+            aria-label="切換選單"
+          >
+            <span class="hamburger-icon" aria-hidden="true">
+              <span></span>
+              <span></span>
+              <span></span>
+            </span>
+            <span>選單</span>
+          </button>
+        </div>
+      </div>
+
+      <nav id="mobile-menu" class="mobile-nav-menu" aria-label="行動版導覽">
+        <a href="index.html" class="mobile-nav-link">首頁</a>
+        <a href="about.html" class="mobile-nav-link">創作介紹</a>
+        <a href="team.html" class="mobile-nav-link is-active" aria-current="page">製作團隊</a>
+        <a href="behind-scenes.html" class="mobile-nav-link">幕後花絮</a>
+        <a href="film.html" class="mobile-nav-link">影片欣賞</a>
+      </nav>
+    </header>
+
+    <div class="site-wrapper">
+      <main id="main-content" class="site-main">
+        <div class="container">
+          
+          <!-- 頁面標題 -->
+          <header class="page-header">
+            <span class="page-kicker">專題製作小組 · 成員分工</span>
+            <h1 class="page-title">製作團隊</h1>
+            <p class="page-intro">
+              本片由全體七位組員共同構思、全組投票定案，並在編導、拍攝、美術、劇務與企劃各職能中協同創作完成。
+            </p>
+          </header>
+
+          <!-- 雙欄佈局：側邊欄 + 主內容 -->
+          <div class="content-grid">
+            
+            <!-- 側邊欄 -->
+            <aside class="sidebar" aria-label="團隊頁面章節目錄">
+              <h2 class="sidebar-title">團隊目錄</h2>
+              <ul class="sidebar-nav-list">
+                <li class="sidebar-nav-item">
+                  <a href="#team-members">成員卡片 (7位)</a>
+                </li>
+                <li class="sidebar-nav-item">
+                  <a href="#team-structure">組織架構</a>
+                </li>
+                <li class="sidebar-nav-item">
+                  <a href="#team-workflow">合作模式</a>
+                </li>
+              </ul>
+
+              <div class="sidebar-info-block">
+                <h3 class="sidebar-info-title">分工概況</h3>
+                <div class="sidebar-meta-list">
+                  <div class="sidebar-meta-item">
+                    <span class="sidebar-meta-label">團隊總人數</span>
+                    <span class="sidebar-meta-value">7 位成員</span>
+                  </div>
+                  <div class="sidebar-meta-item">
+                    <span class="sidebar-meta-label">核心執掌</span>
+                    <span class="sidebar-meta-value">文案、導演、拍攝、美術、劇務、企劃</span>
+                  </div>
+                </div>
+              </div>
+            </aside>
+
+            <!-- 主內容區 -->
+            <div class="main-content">
+              
+              <!-- 團隊成員卡片 Grid（核心需求：CSS Grid，3欄/2欄/1欄響應式切換） -->
+              <section id="team-members" class="section-block">
+                <h2>成員與職務</h2>
+                <p>
+                  嚴格依據實際分工紀錄列出組內七位成員及其職掌，不增添未經確認之虛構經歷：
+                </p>
+
+                <div class="team-grid">
+                  
+                  <!-- 成員 1: 李美茵 -->
+                  <article class="team-card">
+                    <div class="team-avatar-box" aria-hidden="true">李</div>
+                    <div class="team-info">
+                      <h3 class="team-name">李美茵</h3>
+                      <p class="team-role">組長、文案</p>
+                    </div>
+                  </article>
+
+                  <!-- 成員 2: 張紫珊 -->
+                  <article class="team-card">
+                    <div class="team-avatar-box" aria-hidden="true">張</div>
+                    <div class="team-info">
+                      <h3 class="team-name">張紫珊</h3>
+                      <p class="team-role">導演</p>
+                    </div>
+                  </article>
+
+                  <!-- 成員 3: 朱家芯 -->
+                  <article class="team-card">
+                    <div class="team-avatar-box" aria-hidden="true">朱</div>
+                    <div class="team-info">
+                      <h3 class="team-name">朱家芯</h3>
+                      <p class="team-role">拍攝、剪接</p>
+                    </div>
+                  </article>
+
+                  <!-- 成員 4: 吳怡霈 -->
+                  <article class="team-card">
+                    <div class="team-avatar-box" aria-hidden="true">吳</div>
+                    <div class="team-info">
+                      <h3 class="team-name">吳怡霈</h3>
+                      <p class="team-role">美術</p>
+                    </div>
+                  </article>
+
+                  <!-- 成員 5: 陳鈺誠 -->
+                  <article class="team-card">
+                    <div class="team-avatar-box" aria-hidden="true">陳</div>
+                    <div class="team-info">
+                      <h3 class="team-name">陳鈺誠</h3>
+                      <p class="team-role">劇務</p>
+                    </div>
+                  </article>
+
+                  <!-- 成員 6: 林羽恩 -->
+                  <article class="team-card">
+                    <div class="team-avatar-box" aria-hidden="true">林</div>
+                    <div class="team-info">
+                      <h3 class="team-name">林羽恩</h3>
+                      <p class="team-role">企劃</p>
+                    </div>
+                  </article>
+
+                  <!-- 成員 7: 葉沛欣 -->
+                  <article class="team-card">
+                    <div class="team-avatar-box" aria-hidden="true">葉</div>
+                    <div class="team-info">
+                      <h3 class="team-name">葉沛欣</h3>
+                      <p class="team-role">企劃</p>
+                    </div>
+                  </article>
+
+                </div>
+              </section>
+
+              <!-- 組織架構說明 -->
+              <section id="team-structure" class="section-block article-card">
+                <h2>組織架構與職掌劃分</h2>
+                <p>
+                  本次專題製作由全體組員協同分工，依據所分配之職務共同完成作品：
+                </p>
+                <div class="film-spec-grid spec-grid-mt">
+                  <div class="film-spec-item">
+                    <span class="film-spec-label">組長、文案</span>
+                    <span class="film-spec-value">李美茵</span>
+                  </div>
+                  <div class="film-spec-item">
+                    <span class="film-spec-label">導演</span>
+                    <span class="film-spec-value">張紫珊</span>
+                  </div>
+                  <div class="film-spec-item">
+                    <span class="film-spec-label">拍攝、剪接</span>
+                    <span class="film-spec-value">朱家芯</span>
+                  </div>
+                  <div class="film-spec-item">
+                    <span class="film-spec-label">美術</span>
+                    <span class="film-spec-value">吳怡霈</span>
+                  </div>
+                  <div class="film-spec-item">
+                    <span class="film-spec-label">劇務</span>
+                    <span class="film-spec-value">陳鈺誠</span>
+                  </div>
+                  <div class="film-spec-item">
+                    <span class="film-spec-label">企劃</span>
+                    <span class="film-spec-value">林羽恩、葉沛欣</span>
+                  </div>
+                </div>
+              </section>
+
+              <!-- 合作模式 -->
+              <section id="team-workflow" class="section-block article-card">
+                <h2>決策與合作模式</h2>
+                <p>
+                  在抽中「台中綠洲」題目後，組員各自提出口袋名單（包括多處公園與文化園區），最後由全組 7 位成員共同投票，選定「台中糖廠」作為主要拍攝場域。
+                </p>
+                <p>
+                  劇本中的台詞與情節亦經過全組多次讀本討論，將日常生活裡因過度認真而感到焦慮的心境真實寫入劇中。
+                </p>
+              </section>
+
+            </div>
+          </div>
+
+        </div>
+      </main>
+
+      <!-- 頁腳 -->
+      <footer class="site-footer">
+        <div class="container">
+          <div class="footer-grid">
+            <div>
+              <p class="brand-title footer-brand-title">成交 我的慢活日常</p>
+              <p class="footer-desc">
+                大二影展專題作品介紹網站 · 台中綠洲主題<br>
+                故事取材自台中糖廠，透過光影與慢活思考，記錄城市角落裡的生活甜度。
+              </p>
+            </div>
+            <div>
+              <p class="footer-col-title">網站頁面導航</p>
+              <ul class="footer-links-list">
+                <li><a href="index.html" class="footer-link">首頁</a></li>
+                <li><a href="about.html" class="footer-link">創作介紹</a></li>
+                <li><a href="team.html" class="footer-link">製作團隊</a></li>
+                <li><a href="behind-scenes.html" class="footer-link">幕後花絮</a></li>
+                <li><a href="film.html" class="footer-link">影片欣賞</a></li>
+              </ul>
+            </div>
+            <div>
+              <p class="footer-col-title">作品資訊備忘</p>
+              <p class="footer-info-text">
+                拍攝地點：台中糖廠（帝國製糖廠）<br>
+                影片片長：待確認
+              </p>
+            </div>
+          </div>
+
+          <div class="footer-bottom">
+            <span>&copy; 2026 《成交 我的慢活日常》專題製作小組. 保留所有權利.</span>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>

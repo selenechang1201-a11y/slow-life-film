@@ -1,0 +1,260 @@
+<!doctype html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>《成交 我的慢活日常》- 台中綠洲影展專題網站</title>
+    <meta name="description" content="大二影展專題作品《成交 我的慢活日常》官方網站。課堂主題「台中綠洲」，以台中糖廠為故事背景，透過放下對完美的執念，找回真實的生活節奏與笑容。">
+    
+    <!-- Open Graph 基本社群標籤（依規格不上架未驗證之網址與假圖片） -->
+    <meta property="og:title" content="《成交 我的慢活日常》- 台中綠洲影展專題網站">
+    <meta property="og:description" content="放慢腳步，讓生活甜一點。以台中糖廠為舞台的大二影展專案作品，探討現代人面對壓力時的慢活練習。">
+    <meta property="og:type" content="website">
+
+    <!-- CSS 樣式模組（純原生 CSS，依功能分開載入） -->
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/responsive.css">
+
+    <!-- JavaScript 腳本（無障礙與選單互動） -->
+    <script type="module" src="js/main.js"></script>
+  </head>
+  <body>
+    <!-- 鍵盤無障礙快速跳轉 -->
+    <a href="#main-content" class="skip-link">跳至主要內容區</a>
+
+    <!-- 頂部主要導覽列 -->
+    <header class="site-header">
+      <div class="container header-container">
+        <!-- 品牌區：單行文字與專題標籤 -->
+        <a href="index.html" class="site-brand" aria-label="成交 我的慢活日常 首頁">
+          <span class="brand-title">成交 我的慢活日常</span>
+          <span class="brand-tag">台中綠洲 影展專題</span>
+        </a>
+
+        <!-- 電腦版主導覽列 -->
+        <nav class="site-nav" aria-label="全站主導覽">
+          <a href="index.html" class="nav-link is-active" aria-current="page">首頁</a>
+          <a href="about.html" class="nav-link">創作介紹</a>
+          <a href="team.html" class="nav-link">製作團隊</a>
+          <a href="behind-scenes.html" class="nav-link">幕後花絮</a>
+          <a href="film.html" class="nav-link">影片欣賞</a>
+        </nav>
+
+        <!-- 行動版選單開關按鈕 -->
+        <div class="header-actions">
+          <button 
+            type="button" 
+            class="nav-toggle-btn" 
+            aria-expanded="false" 
+            aria-controls="mobile-menu"
+            aria-label="切換選單"
+          >
+            <span class="hamburger-icon" aria-hidden="true">
+              <span></span>
+              <span></span>
+              <span></span>
+            </span>
+            <span>選單</span>
+          </button>
+        </div>
+      </div>
+
+      <!-- 手機版下拉導覽選單 -->
+      <nav id="mobile-menu" class="mobile-nav-menu" aria-label="行動版導覽">
+        <a href="index.html" class="mobile-nav-link is-active" aria-current="page">首頁</a>
+        <a href="about.html" class="mobile-nav-link">創作介紹</a>
+        <a href="team.html" class="mobile-nav-link">製作團隊</a>
+        <a href="behind-scenes.html" class="mobile-nav-link">幕後花絮</a>
+        <a href="film.html" class="mobile-nav-link">影片欣賞</a>
+      </nav>
+    </header>
+
+    <div class="site-wrapper">
+      <main id="main-content" class="site-main">
+        <div class="container">
+          
+          <!-- 首頁主視覺海報與核心引言區 -->
+          <section class="hero-section" aria-labelledby="hero-heading">
+            <div class="hero-grid">
+              <div class="hero-content">
+                <span class="hero-kicker">大二影展專題作品 · 台中綠洲</span>
+                <h1 id="hero-heading" class="hero-title">成交 我的慢活日常</h1>
+                <p class="hero-quote">「放慢腳步，讓生活甜一點。」</p>
+                <p class="hero-lead">
+                  被工作與業績壓得喘不過氣的主角，在樂樂的陪伴下，帶著相機來到台中糖廠，想拍下一張讓自己開心的照片。然而，越想拍得完美，反而越難放鬆……
+                </p>
+                
+                <!-- 行動引導按鈕 -->
+                <div class="hero-actions">
+                  <a href="about.html" class="btn btn-primary">認識作品</a>
+                  <a href="film.html" class="btn btn-secondary">影片欣賞</a>
+                </div>
+
+                <div class="meta-strip">
+                  <span>課堂主題：台中綠洲</span>
+                  <span class="sep" aria-hidden="true">·</span>
+                  <span>拍攝場域：台中糖廠</span>
+                  <span class="sep" aria-hidden="true">·</span>
+                  <span>片長：待確認</span>
+                </div>
+              </div>
+
+              <!-- 主視覺預留區（不使用假網路圖片，純色標示供更換） -->
+              <div class="visual-frame" role="img" aria-label="《成交 我的慢活日常》主視覺海報素材預留區">
+                <!-- 圖片替換位置：實體圖片請存於 images/poster.jpg 並以此替換 -->
+                <span class="visual-badge">素材預留區</span>
+                <span class="visual-name">主視覺海報 / 劇照</span>
+                <p class="visual-note">
+                  目前尚未提供正式照片，已保留比例空間。
+                </p>
+              </div>
+            </div>
+          </section>
+
+          <!-- 雙欄佈局：側邊欄 + 主內容區 -->
+          <div class="content-grid">
+            
+            <!-- 側邊欄：本頁導覽與專題摘要 -->
+            <aside class="sidebar" aria-label="本頁章節目錄">
+              <h2 class="sidebar-title">本頁導覽</h2>
+              <ul class="sidebar-nav-list">
+                <li class="sidebar-nav-item">
+                  <a href="#story-summary">故事摘要</a>
+                </li>
+                <li class="sidebar-nav-item">
+                  <a href="#oasis-concept">台中綠洲概念</a>
+                </li>
+                <li class="sidebar-nav-item">
+                  <a href="#quick-guide">專題單元快覽</a>
+                </li>
+              </ul>
+
+              <div class="sidebar-info-block">
+                <h3 class="sidebar-info-title">專題資訊</h3>
+                <div class="sidebar-meta-list">
+                  <div class="sidebar-meta-item">
+                    <span class="sidebar-meta-label">作品名稱</span>
+                    <span class="sidebar-meta-value">成交 我的慢活日常</span>
+                  </div>
+                  <div class="sidebar-meta-item">
+                    <span class="sidebar-meta-label">專題主題</span>
+                    <span class="sidebar-meta-value">台中綠洲</span>
+                  </div>
+                  <div class="sidebar-meta-item">
+                    <span class="sidebar-meta-label">故事舞台</span>
+                    <span class="sidebar-meta-value">台中糖廠</span>
+                  </div>
+                  <div class="sidebar-meta-item">
+                    <span class="sidebar-meta-label">預計片長</span>
+                    <span class="sidebar-meta-value">待確認</span>
+                  </div>
+                </div>
+              </div>
+            </aside>
+
+            <!-- 主內容區 -->
+            <div class="main-content">
+              
+              <!-- 故事大綱摘要 -->
+              <section id="story-summary" class="section-block article-card">
+                <h2>故事摘要</h2>
+                <p>
+                  被工作與業績壓得喘不過氣的主角，在樂樂的陪伴下，帶著相機來到台中糖廠，想拍下一張讓自己開心的照片。然而，越想拍得完美，反而越難放鬆。
+                </p>
+                <p>
+                  一場與跑步男子的偶遇，讓兩人發現，自己一個忙著拍照、一個忙著完成運動目標，竟都忘了好好看看眼前的風景。當主角終於放下要求，一張不完美卻充滿笑容的照片，留下了這趟旅程最真實的快樂。
+                </p>
+                <div class="quote-box">
+                  放慢腳步，讓生活甜一點。偶爾放下對完美的要求，看看眼前的風景，就是慢活的開始。
+                </div>
+                <div>
+                  <a href="about.html" class="btn btn-secondary">深入閱讀創作動機與大綱 &rarr;</a>
+                </div>
+              </section>
+
+              <!-- 台中綠洲與糖廠舞台 -->
+              <section id="oasis-concept" class="section-block article-card">
+                <h2>課堂主題：台中綠洲</h2>
+                <p>
+                  這次專題抽到「台中綠洲」的主題後，我們各自提出適合的拍攝地點，最後透過全組投票，選定台中糖廠作為故事的舞台。
+                </p>
+                <p>
+                  對我們來說，「綠洲」除了是城市裡的綠地，也可以是一個讓人暫時放下壓力、找回生活節奏的地方。因此，我們想透過糖廠的老建築、湖景與步道，拍出忙碌日常中能夠停下來喘口氣的片刻。
+                </p>
+                <div class="meta-strip">
+                  <span>場景選定：帝國製糖廠園區</span>
+                  <span class="sep" aria-hidden="true">·</span>
+                  <span>全組投票決議</span>
+                  <span class="sep" aria-hidden="true">·</span>
+                  <span>現代生活省思</span>
+                </div>
+              </section>
+
+              <!-- 專題單元快覽卡片 -->
+              <section id="quick-guide" class="section-block">
+                <h2>探索更多專題單元</h2>
+                <div class="features-grid">
+                  <div class="team-card">
+                    <h3 class="team-name">製作團隊</h3>
+                    <p class="bts-card-desc">全組共 7 位成員分工合作，從企劃、文案、編導到攝影剪輯與美術劇務。</p>
+                    <a href="team.html" class="btn btn-secondary">查看團隊名單 &rarr;</a>
+                  </div>
+                  <div class="team-card">
+                    <h3 class="team-name">幕後花絮</h3>
+                    <p class="bts-card-desc">從分鏡到拍攝，認識作品背後的製作過程。相關素材將陸續補上。</p>
+                    <a href="behind-scenes.html" class="btn btn-secondary">瀏覽幕後紀錄 &rarr;</a>
+                  </div>
+                  <div class="team-card">
+                    <h3 class="team-name">影片欣賞</h3>
+                    <p class="bts-card-desc">預留正片播放器與規格資訊，影片尚未提供網址，影片即將上線。</p>
+                    <a href="film.html" class="btn btn-secondary">前往放映頁面 &rarr;</a>
+                  </div>
+                </div>
+              </section>
+
+            </div>
+          </div>
+
+        </div>
+      </main>
+
+      <!-- 頁腳 -->
+      <footer class="site-footer">
+        <div class="container">
+          <div class="footer-grid">
+            <div>
+              <p class="brand-title footer-brand-title">成交 我的慢活日常</p>
+              <p class="footer-desc">
+                大二影展專題作品介紹網站 · 台中綠洲主題<br>
+                故事取材自台中糖廠，透過光影與慢活思考，記錄城市角落裡的生活甜度。
+              </p>
+            </div>
+            <div>
+              <p class="footer-col-title">網站頁面導航</p>
+              <ul class="footer-links-list">
+                <li><a href="index.html" class="footer-link">首頁</a></li>
+                <li><a href="about.html" class="footer-link">創作介紹</a></li>
+                <li><a href="team.html" class="footer-link">製作團隊</a></li>
+                <li><a href="behind-scenes.html" class="footer-link">幕後花絮</a></li>
+                <li><a href="film.html" class="footer-link">影片欣賞</a></li>
+              </ul>
+            </div>
+            <div>
+              <p class="footer-col-title">作品資訊備忘</p>
+              <p class="footer-info-text">
+                拍攝地點：台中糖廠（帝國製糖廠）<br>
+                影片片長：待確認
+              </p>
+            </div>
+          </div>
+
+          <div class="footer-bottom">
+            <span>&copy; 2026 《成交 我的慢活日常》專題製作小組. 保留所有權利.</span>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>

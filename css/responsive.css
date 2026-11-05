@@ -1,0 +1,229 @@
+/**
+ * responsive.css - 響應式排版 (RWD)
+ * 涵蓋 1440px 電腦、768px 平板、390px / 375px 手機排版
+ * 專題作品：《成交 我的慢活日常》
+ */
+
+/* ==========================================================================
+   平板與中型螢幕 (Tablet: 768px - 1024px)
+   ========================================================================== */
+
+@media (max-width: 1024px) {
+  /* 雙欄縮小間距 */
+  .content-grid {
+    grid-template-columns: 240px 1fr;
+    gap: 32px;
+  }
+
+  /* 團隊卡片改為 2 欄 */
+  .team-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+
+  /* 幕後素材改為 2 欄 */
+  .bts-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+
+  /* 首頁故事切分調整 */
+  .story-split-grid {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+
+  /* 頁腳改為雙欄 */
+  .footer-grid {
+    grid-template-columns: 1.5fr 1fr;
+    gap: 32px;
+  }
+}
+
+/* ==========================================================================
+   手機與直式平板 (Mobile & Small Tablet: <= 768px)
+   ========================================================================== */
+
+@media (max-width: 768px) {
+  /* 容器邊距縮減 */
+  .container {
+    padding-left: 18px;
+    padding-right: 18px;
+  }
+
+  /* 頂部導覽列：隱藏電腦版選單，顯示漢堡選單按鈕 */
+  .site-nav {
+    display: none;
+  }
+
+  .nav-toggle-btn {
+    display: inline-flex;
+  }
+
+  /* 手機版下拉選單本體（支援較矮螢幕可垂直滾動，確保五個連結均能完整點擊） */
+  .mobile-nav-menu {
+    display: none;
+    position: fixed;
+    top: var(--header-height);
+    left: 0;
+    right: 0;
+    max-height: calc(100vh - var(--header-height));
+    max-height: calc(100dvh - var(--header-height));
+    overflow-y: auto;
+    overscroll-behavior: contain;
+    -webkit-overflow-scrolling: touch;
+    background-color: var(--color-bg-base);
+    border-bottom: 1px solid var(--color-border);
+    padding: 16px 20px 24px 20px;
+    flex-direction: column;
+    gap: 8px;
+    z-index: 99;
+    box-shadow: 0 10px 24px rgba(43, 33, 24, 0.08);
+  }
+
+  .mobile-nav-menu.is-open {
+    display: flex;
+  }
+
+  .mobile-nav-link {
+    display: flex;
+    align-items: center;
+    padding: 12px 14px;
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--color-text-main);
+    border-radius: var(--radius-sm);
+    min-height: 44px; /* 觸控目標 >= 44px */
+    border-left: 3px solid transparent;
+    transition: background-color var(--transition-fast);
+  }
+
+  .mobile-nav-link:hover,
+  .mobile-nav-link:focus-visible {
+    background-color: var(--color-bg-surface);
+  }
+
+  .mobile-nav-link.is-active {
+    background-color: var(--color-accent-tint);
+    color: var(--color-accent-hover);
+    font-weight: 600;
+    border-left-color: var(--color-accent);
+  }
+
+  /* 主要排版：側邊欄移到主內容上方，維持易讀性與目錄功能 */
+  .content-grid {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+
+  .sidebar {
+    position: static;
+    top: auto;
+    padding: 18px;
+    width: 100%;
+  }
+
+  /* 首頁主視覺堆疊 */
+  .hero-grid {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+
+  .hero-section {
+    padding: 32px 0 44px 0;
+    margin-bottom: 36px;
+  }
+
+  .hero-actions {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .hero-actions .btn {
+    width: 100%;
+  }
+
+  /* 團隊成員卡片：768px 以下為 2 欄 */
+  .team-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  /* 規格卡片改單欄 */
+  .film-spec-grid {
+    grid-template-columns: 1fr;
+    gap: 14px;
+  }
+
+  /* 頁腳單欄 */
+  .footer-grid {
+    grid-template-columns: 1fr;
+    gap: 28px;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
+}
+
+/* ==========================================================================
+   小型手機 (Small Screen: <= 480px，檢測 390px、375px)
+   ========================================================================== */
+
+@media (max-width: 480px) {
+  .container {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  /* 品牌名稱在小螢幕時微調大小，避免擠壓換行 */
+  .brand-title {
+    font-size: 1.18rem;
+  }
+
+  .brand-tag {
+    display: none; /* 小手機收起次要副標題，確保單行 */
+  }
+
+  /* 團隊卡片改為 1 欄 */
+  .team-grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  /* 幕後素材卡片改為 1 欄 */
+  .bts-grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  /* 分鏡項目垂直堆疊 */
+  .storyboard-item {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+
+  .article-card {
+    padding: 24px 18px;
+  }
+
+  .quote-box {
+    padding: 18px 20px;
+    font-size: 1rem;
+  }
+
+  .film-player-container {
+    padding: 28px 16px;
+  }
+}
+
+/* 支援無障礙偏好設定：降低動畫動態 */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}

@@ -1,0 +1,280 @@
+<!doctype html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>影片欣賞 - 《成交 我的慢活日常》台中綠洲影展專題</title>
+    <meta name="description" content="《成交 我的慢活日常》影片放映與作品規格頁面。課堂主題「台中綠洲」，片長待確認，影片即將上線。">
+    
+    <!-- Open Graph 社群標籤 -->
+    <meta property="og:title" content="影片欣賞 - 《成交 我的慢活日常》">
+    <meta property="og:description" content="《成交 我的慢活日常》正片放映區與技術規格資訊。影片即將上線，敬請期待！">
+    <meta property="og:type" content="video.movie">
+
+    <!-- CSS 樣式模組 -->
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/responsive.css">
+
+    <!-- JavaScript 腳本 -->
+    <script type="module" src="js/main.js"></script>
+  </head>
+  <body>
+    <!-- 鍵盤無障礙跳轉 -->
+    <a href="#main-content" class="skip-link">跳至主要內容區</a>
+
+    <!-- 頂部主要導覽列 -->
+    <header class="site-header">
+      <div class="container header-container">
+        <a href="index.html" class="site-brand" aria-label="成交 我的慢活日常 首頁">
+          <span class="brand-title">成交 我的慢活日常</span>
+          <span class="brand-tag">台中綠洲 影展專題</span>
+        </a>
+
+        <nav class="site-nav" aria-label="全站主導覽">
+          <a href="index.html" class="nav-link">首頁</a>
+          <a href="about.html" class="nav-link">創作介紹</a>
+          <a href="team.html" class="nav-link">製作團隊</a>
+          <a href="behind-scenes.html" class="nav-link">幕後花絮</a>
+          <a href="film.html" class="nav-link is-active" aria-current="page">影片欣賞</a>
+        </nav>
+
+        <div class="header-actions">
+          <button 
+            type="button" 
+            class="nav-toggle-btn" 
+            aria-expanded="false" 
+            aria-controls="mobile-menu"
+            aria-label="切換選單"
+          >
+            <span class="hamburger-icon" aria-hidden="true">
+              <span></span>
+              <span></span>
+              <span></span>
+            </span>
+            <span>選單</span>
+          </button>
+        </div>
+      </div>
+
+      <nav id="mobile-menu" class="mobile-nav-menu" aria-label="行動版導覽">
+        <a href="index.html" class="mobile-nav-link">首頁</a>
+        <a href="about.html" class="mobile-nav-link">創作介紹</a>
+        <a href="team.html" class="mobile-nav-link">製作團隊</a>
+        <a href="behind-scenes.html" class="mobile-nav-link">幕後花絮</a>
+        <a href="film.html" class="mobile-nav-link is-active" aria-current="page">影片欣賞</a>
+      </nav>
+    </header>
+
+    <div class="site-wrapper">
+      <main id="main-content" class="site-main">
+        <div class="container">
+          
+          <!-- 頁面標題 -->
+          <header class="page-header">
+            <span class="page-kicker">正片放映 · 規格資訊</span>
+            <h1 class="page-title">影片欣賞</h1>
+            <p class="page-intro">
+              本頁提供作品放映與規格資訊。下方已預留標準 16:9 播放容器，影片尚未提供網址，影片即將上線。
+            </p>
+          </header>
+
+          <!-- 雙欄佈局：側邊欄 + 主內容 -->
+          <div class="content-grid">
+            
+            <!-- 側邊欄 -->
+            <aside class="sidebar" aria-label="影片頁面目錄">
+              <h2 class="sidebar-title">放映導覽</h2>
+              <ul class="sidebar-nav-list">
+                <li class="sidebar-nav-item">
+                  <a href="#player-area">放映播放區</a>
+                </li>
+                <li class="sidebar-nav-item">
+                  <a href="#film-specs">作品規格清單</a>
+                </li>
+                <li class="sidebar-nav-item">
+                  <a href="#crew-summary">製作組員總覽</a>
+                </li>
+                <li class="sidebar-nav-item">
+                  <a href="#embed-guide">影片網址替換說明</a>
+                </li>
+              </ul>
+
+              <div class="sidebar-info-block">
+                <h3 class="sidebar-info-title">放映狀態</h3>
+                <div class="sidebar-meta-list">
+                  <div class="sidebar-meta-item">
+                    <span class="sidebar-meta-label">目前進度</span>
+                    <span class="sidebar-meta-value">影片即將上線</span>
+                  </div>
+                  <div class="sidebar-meta-item">
+                    <span class="sidebar-meta-label">實際片長</span>
+                    <span class="sidebar-meta-value">待確認</span>
+                  </div>
+                  <div class="sidebar-meta-item">
+                    <span class="sidebar-meta-label">畫面比例</span>
+                    <span class="sidebar-meta-value">16 : 9 (Full HD)</span>
+                  </div>
+                </div>
+              </div>
+            </aside>
+
+            <!-- 主內容區 -->
+            <div class="main-content">
+              
+              <!-- 影片播放器預留區（依規範：顯示「影片即將上線」，不使用假按鈕或空 iframe） -->
+              <section id="player-area" class="section-block" aria-labelledby="player-heading">
+                <h2 id="player-heading" class="sr-only">影片播放預留視窗</h2>
+                
+                <div class="film-player-container" role="region" aria-label="影片播放器預留區">
+                  <!-- 影片即將上線狀態標籤 -->
+                  <span class="film-status-tag">UPCOMING RELEASE</span>
+                  <p class="film-player-title">影片即將上線</p>
+                  <p class="film-player-message">
+                    《成交 我的慢活日常》正片影片尚未提供網址，影片即將上線。
+                  </p>
+                  <div class="film-replace-hint">
+                    代碼位置：<code>film.html</code> 的 <code>&lt;!-- 影片嵌入位置 --&gt;</code> 註解處
+                  </div>
+                </div>
+              </section>
+
+              <!-- 作品規格與基本資料區 -->
+              <section id="film-specs" class="section-block article-card">
+                <h2>作品基本資訊</h2>
+                <p>
+                  本專題為大二影展課程之實拍短片，以下為經確認之作品基本資訊：
+                </p>
+
+                <div class="film-spec-grid spec-grid-mt">
+                  <div class="film-spec-item">
+                    <span class="film-spec-label">作品中文片名</span>
+                    <span class="film-spec-value">成交 我的慢活日常</span>
+                  </div>
+                  <div class="film-spec-item">
+                    <span class="film-spec-label">課堂主題</span>
+                    <span class="film-spec-value">台中綠洲</span>
+                  </div>
+                  <div class="film-spec-item">
+                    <span class="film-spec-label">故事舞台與主要場景</span>
+                    <span class="film-spec-value">台中糖廠（帝國製糖廠、星泉湖畔）</span>
+                  </div>
+                  <div class="film-spec-item">
+                    <span class="film-spec-label">實際片長</span>
+                    <span class="film-spec-value">待確認</span>
+                  </div>
+                  <div class="film-spec-item">
+                    <span class="film-spec-label">影片語言 / 字幕</span>
+                    <span class="film-spec-value">國語發音 / 繁體中文字幕</span>
+                  </div>
+                  <div class="film-spec-item">
+                    <span class="film-spec-label">核心理念</span>
+                    <span class="film-spec-value">偶爾放下對完美的要求，看看眼前的風景</span>
+                  </div>
+                </div>
+              </section>
+
+              <!-- 製作團隊職務總覽 -->
+              <section id="crew-summary" class="section-block article-card">
+                <h2>製作團隊名單</h2>
+                <div class="film-spec-grid spec-grid-mt-sm">
+                  <div class="film-spec-item">
+                    <span class="film-spec-label">組長、文案</span>
+                    <span class="film-spec-value">李美茵</span>
+                  </div>
+                  <div class="film-spec-item">
+                    <span class="film-spec-label">導演</span>
+                    <span class="film-spec-value">張紫珊</span>
+                  </div>
+                  <div class="film-spec-item">
+                    <span class="film-spec-label">拍攝、剪接</span>
+                    <span class="film-spec-value">朱家芯</span>
+                  </div>
+                  <div class="film-spec-item">
+                    <span class="film-spec-label">美術</span>
+                    <span class="film-spec-value">吳怡霈</span>
+                  </div>
+                  <div class="film-spec-item">
+                    <span class="film-spec-label">劇務</span>
+                    <span class="film-spec-value">陳鈺誠</span>
+                  </div>
+                  <div class="film-spec-item">
+                    <span class="film-spec-label">企劃</span>
+                    <span class="film-spec-value">林羽恩、葉沛欣</span>
+                  </div>
+                </div>
+                <div class="action-block-mt">
+                  <a href="team.html" class="btn btn-secondary">前往完整製作團隊介紹 &rarr;</a>
+                </div>
+              </section>
+
+              <!-- 影片嵌入指南 -->
+              <section id="embed-guide" class="section-block callout-box">
+                <h3 class="callout-title">
+                  <span>&#9432;</span> 影音網址上線替換教學（供同學更新）
+                </h3>
+                <div class="callout-content">
+                  <p>當影片完成並上傳至 YouTube 或 Vimeo 後，請依下列方式將預留區改為真實播放器：</p>
+                  <ol>
+                    <li>在 YouTube 影片頁面點擊「分享」&rarr;「嵌入」，複製 <code>&lt;iframe&gt;</code> 程式碼。</li>
+                    <li>開啟 <code>film.html</code>，將 <code>class="film-player-container"</code> 內部的即將上線文字替換為嵌入碼。</li>
+                    <li>
+                      範例代碼：
+                      <pre class="code-preview-block">&lt;div class="film-player-container"&gt;
+  &lt;iframe 
+    src="https://www.youtube.com/embed/YOUR_VIDEO_ID" 
+    title="《成交 我的慢活日常》正片放映" 
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+    allowfullscreen&gt;
+  &lt;/iframe&gt;
+&lt;/div&gt;</pre>
+                    </li>
+                  </ol>
+                </div>
+              </section>
+
+            </div>
+          </div>
+
+        </div>
+      </main>
+
+      <!-- 頁腳 -->
+      <footer class="site-footer">
+        <div class="container">
+          <div class="footer-grid">
+            <div>
+              <p class="brand-title footer-brand-title">成交 我的慢活日常</p>
+              <p class="footer-desc">
+                大二影展專題作品介紹網站 · 台中綠洲主題<br>
+                故事取材自台中糖廠，透過光影與慢活思考，記錄城市角落裡的生活甜度。
+              </p>
+            </div>
+            <div>
+              <p class="footer-col-title">網站頁面導航</p>
+              <ul class="footer-links-list">
+                <li><a href="index.html" class="footer-link">首頁</a></li>
+                <li><a href="about.html" class="footer-link">創作介紹</a></li>
+                <li><a href="team.html" class="footer-link">製作團隊</a></li>
+                <li><a href="behind-scenes.html" class="footer-link">幕後花絮</a></li>
+                <li><a href="film.html" class="footer-link">影片欣賞</a></li>
+              </ul>
+            </div>
+            <div>
+              <p class="footer-col-title">作品資訊備忘</p>
+              <p class="footer-info-text">
+                拍攝地點：台中糖廠（帝國製糖廠）<br>
+                影片片長：待確認
+              </p>
+            </div>
+          </div>
+
+          <div class="footer-bottom">
+            <span>&copy; 2026 《成交 我的慢活日常》專題製作小組. 保留所有權利.</span>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>

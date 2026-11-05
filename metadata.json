@@ -1,0 +1,6 @@
+{
+  "name": "成交 我的慢活日常 - 影展專題網站",
+  "description": "大二影展專題作品《成交 我的慢活日常》官方介紹網站，探索台中糖廠與放慢步調的生活哲學。",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
